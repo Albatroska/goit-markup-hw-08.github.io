@@ -1,0 +1,109 @@
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.header{
+   padding-top: 24px;
+   padding-bottom: 25px;
+   border-bottom:1px solid #e7e1e1;
+   
+}
+.headernav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+ .current-page{
+    text-decoration: none;
+    position: relative;
+    color: var(--link-blue-color);
+}
+
+ .current-page::after{
+   display:inline-block;
+   position: absolute;
+   top: 45px;
+   left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+   width:100%;/*задаём длинну линии до наведения курсора*/
+  height: 5px; /*задаём ширину линии*/
+   background-color: var(--link-blue-color); /*задаём цвет линии*/
+   content: "";
+   
+   
+}
+
+
+.site-nav {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+   }
+
+  .navigation{
+      margin-left: 70px;
+  }
+.site-nav .link{
+    color: var(--title-black-color);
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav :not(:last-child){
+    margin-right: 45px;
+   }
+.contact-nav ,
+.site-nav {
+   display: flex;
+
+  
+} 
+
+.contact{
+   margin-left: auto;
+}
+
+.contact-nav .link{
+   color:#757575;
+   font-style: 400;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:var(--link-blue-color);
+   
+}
+.contact-nav .link:hover,
+.contact-nav .link:focus{
+   color:var(--link-blue-color);
+  
+}
+.mail-icon, .phone-icon{
+   display: flex;
+}
+.mail-icon,
+.phone-icon{
+   display: flex;
+   fill: currentColor;
+   margin-right: 10px;
+}
+.link, .mail-icon, .phone-icon{
+   display: flex;
+   align-items: center;
+}

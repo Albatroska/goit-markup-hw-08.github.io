@@ -1,0 +1,35 @@
+
+.title__second-title {
+    color: var(--title-black-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.title__section-description{
+font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;}
+
+.servies__icon-image{      
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+  }
+.servies{
+    padding-top: 95px;
+}
+.servies__li{
+    width: 270px;
+    &:not(:last-child){
+        margin-right: 30px;
+        
+    } 
+}
+

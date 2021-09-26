@@ -1,0 +1,59 @@
+.section-title{
+    color: var(--title-black-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--title-black-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px;
+
+}
+.imgsection{
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.name{
+    padding-bottom: 10px;
+    text-align: center;
+    .page-name{
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.18;
+    }
+}
+
+.section-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.list{
+    display: flex;
+}
+.itemsimg:not(:last-child){
+   margin-right: 30px;
+}
+.itemsimg {  
+    position:relative;
+}
+.itemsimg .overley-text{
+position:absolute;
+bottom:0;
+width:100%;
+ 
+color:#FFFFFF;
+     
+padding-top:27px;
+padding-bottom: 27px;
+background-color:rgba(47, 48, 58, 0.8);
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.03em;
+line-height: 1.14;
+font-size: 14px;
+font-weight: 700;
+}

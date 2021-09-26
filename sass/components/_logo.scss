@@ -1,0 +1,58 @@
+.header{ 
+    .logo{
+    color:var(--logo-black-color);
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    
+}
+.span-logo{
+    color:var(--link-blue-color) ;
+}
+}
+
+
+.header .span-logo:hover{
+    color: var(--logo-black-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo{ 
+   display:inline-block;
+   &:hover{
+    color: var(--link-blue-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+}
+
+
+.footer__listlogo{
+    display: flex; 
+   
+}
+    
+.footer{ 
+    .footer__logo{
+    color: var(--title-white-color);
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        color:var(--link-blue-color);
+       
+    }
+}
+.footer__span-logo{
+    color: var(--link-blue-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        color:var(--title-white-color);
+        
+    }
+}
+}
+
+
