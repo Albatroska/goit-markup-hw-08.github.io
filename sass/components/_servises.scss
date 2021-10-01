@@ -9,9 +9,14 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 10px;
+    
 
 }
 .imgsection{
+    @media screen and (max-width:1990px) {
+        display: none;
+        
+    }
     padding-top: 95px;
     padding-bottom: 95px;
 }
@@ -31,9 +36,10 @@
     font-size: 14px;
     line-height: 1.71;
 }
-.list{
-    display: flex;
-}
+
+   .list{
+       display: flex;
+   }
 .itemsimg:not(:last-child){
    margin-right: 30px;
 }
