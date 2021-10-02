@@ -6,6 +6,9 @@
         display: none;
 
     }
+    padding-top: 95px;
+    padding-bottom: 95px;
+
 }
 .section-title{
     color: var(--title-black-color);
@@ -20,11 +23,7 @@
     margin-bottom: 10px;
 
 }
-.imgsection{
-    padding-top: 95px;
-    padding-bottom: 95px;
 
-}
 
 .name{
     padding-bottom: 10px;
@@ -44,23 +43,26 @@
 
  
 .list{
-
+    margin-bottom: 30px;
     
 @media screen and (min-width:768px){
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
-    margin: -15px;
+    margin-left: -30px;
 }
 }
 .servies_li{
+    
+
    @media screen and (max-width: 767px) {
         width: 100%;
         margin-bottom: 30px; 
     }
     @media screen and(min-width:768px){
         flex-basis: calc(100% / 2 - 30px);
-        margin: 15px;
+        margin-left: 30px;
         
     }
     @media screen and(min-width:1200px){
@@ -70,9 +72,13 @@
 }
 
 .itemsimg:not(:last-child){
-   margin-right: 30px;
+ margin-right: 30px;
 }
-.itemsimg {  
+.itemsimg { 
+    @media screen and (max-width:1199px){
+        margin-bottom:30px;   
+    }
+    
     position:relative;
 }
 .itemsimg .overley-text{

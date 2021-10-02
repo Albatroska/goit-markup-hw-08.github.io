@@ -94,6 +94,24 @@ body img {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -265,7 +283,7 @@ body img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  width: 528px;
+  width: 450px;
   height: 581px;
   box-sizing: border-box;
   background: #FFFFFF;
@@ -275,6 +293,12 @@ body img {
   padding: 40px;
   text-align: center;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .modal__form {
+    width: 528px;
+  }
 }
 
 .modal__form .modal__description-icon {
@@ -472,7 +496,7 @@ body img {
 }
 
 .servies__icon-image {
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background: #F5F4FA;
@@ -500,6 +524,11 @@ body img {
   margin-right: 30px;
 }
 
+.imgsection {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
 @media screen and (max-width: 1199px) {
   .imgsection {
     display: none;
@@ -519,11 +548,6 @@ body img {
   margin-bottom: 10px;
 }
 
-.imgsection {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-
 .name {
   padding-bottom: 10px;
   text-align: center;
@@ -541,11 +565,16 @@ body img {
   line-height: 1.71;
 }
 
+.list {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    justify-content: space-around;
+    margin-left: -30px;
   }
 }
 
@@ -559,7 +588,7 @@ body img {
 @media screen and (min-width: 768px) {
   .servies_li {
     flex-basis: calc(100% / 2 - 30px);
-    margin: 15px;
+    margin-left: 30px;
   }
 }
 
@@ -575,6 +604,12 @@ body img {
 
 .itemsimg {
   position: relative;
+}
+
+@media screen and (max-width: 1199px) {
+  .itemsimg {
+    margin-bottom: 30px;
+  }
 }
 
 .itemsimg .overley-text {
@@ -606,11 +641,19 @@ body img {
 
 .img,
 .team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .img,
+  .team {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .name {
@@ -670,29 +713,57 @@ body img {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients .titleclient {
-  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 30px;
   line-height: 1.17;
   letter-spacing: 0,3em;
   color: black;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients .titleclient {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
 .clients .client__section {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .clients .client__list {
   list-style-type: none;
+  height: 92px;
+  flex-basis: calc(100% /2 - 30px);
+  flex-basis-margin-right: 30px;
+  flex-basis-margin-bottom: 30px;
 }
 
-.clients .client__list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients .client__list {
+    flex-basis: calc(100% /3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-basis: calc(100% /6 - 30px);
+  }
 }
 
 .client__icon-button {
@@ -896,6 +967,14 @@ body img {
 .button-list {
   justify-content: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 .btnli:not(:last-child) {
