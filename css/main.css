@@ -113,13 +113,21 @@ body img {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #e7e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .headernav {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -162,7 +170,12 @@ body img {
 }
 
 .navigation {
+  display: none;
   margin-left: 70px;
+}
+
+.contact {
+  display: none;
 }
 
 .site-nav .link {
@@ -173,15 +186,6 @@ body img {
 
 .site-nav :not(:last-child) {
   margin-right: 45px;
-}
-
-.contact-nav,
-.site-nav {
-  display: flex;
-}
-
-.contact {
-  margin-left: auto;
 }
 
 .contact-nav .link {
@@ -217,6 +221,104 @@ body img {
 .link, .mail-icon, .phone-icon {
   display: flex;
   align-items: center;
+}
+
+.menu-open, .menu-close {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menu-close {
+  position: absolute;
+  right: 15px;
+  top: -37px;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: #ffffff;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu .container {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+}
+
+.mob-menu-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-item .mob-menu-link {
+  font-weight: 500;
+  font-style: 40px;
+  line-height: calc(47 / 40);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+
+.mob-contacts-list {
+  margin-bottom: 64px;
+}
+
+.mob-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contacts-link {
+  font-weight: 500;
+  font-style: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+.mob-contacts-tel-link {
+  font-size: 34px;
+  line-height: calc(40 / 34);
+}
+
+.mob-social-list {
+  display: flex;
+}
+
+.mob-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-social-item:not(:last-child) .mob-social-link {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+
+.mob-social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  text-decoration: none;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .section {
