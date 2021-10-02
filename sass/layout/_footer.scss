@@ -50,10 +50,17 @@
 
 }
 .footer-links__iconfooter{
-  display: flex;
- flex-direction: column;
- margin-left: 80px;
-
+    @media screen and(max-width:479px) {
+        display: block;
+        
+    }
+    @media screen and(min-width:480px){
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        
+    }
+  
 
 }
 .footer-links__title-footer{
