@@ -2,32 +2,16 @@
     background-color: #2f303a;
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center; 
+    text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-  
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
     background: linear-gradient(to right, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/imghero.jpg");
     background-position: center;
     background-repeat: no-repeat; 
-    background-size: cover; 
-    max-width: 360px;
-    
-    @media screen and (min-width: 400px) {
-        width: 696px; 
-        margin-right: auto;
-        margin-left: auto;  
-
-    } 
-    @media screen and (min-width: 1200px) {
-        width: 696px; 
-        margin-right: auto;
-        margin-left: auto;  
-
-    } 
-
-    } 
-   
-
+    background-size: cover;   
     .main__title{
         color: var(--title-white-color) ;
         font-weight: 900;
@@ -36,7 +20,6 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-top: 0;
-        max-width: 360px;
     }
     .main__button{
         color: var(--title-white-color) ;
@@ -51,6 +34,7 @@
        
     }
     
+}
 
 .modal__backdrop{
     position: fixed;
