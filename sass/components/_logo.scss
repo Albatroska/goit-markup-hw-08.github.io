@@ -30,7 +30,10 @@
 .footer__listlogo{
     text-align: center;
     justify-content: center;
- //   display: flex; 
+    @media screen and (min-width:769px){
+        display: flex; 
+    }
+    
    
 }
     

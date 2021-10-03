@@ -34,8 +34,12 @@
     display: block;
     flex-direction: column;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
     padding-left: 0px;
+    @media screen and (min-width:769px){
+        margin-bottom: 0px;
+        
+    }
        
 }
 .telmailli:not(:last-child){
@@ -50,8 +54,12 @@
 
 }
 .footer-links__iconfooter{
+    
+
+    
     @media screen and(max-width:479px) {
         display: block;
+        margin-bottom: 60px;
         
     }
     @media screen and(min-width:480px){
@@ -69,10 +77,14 @@
     letter-spacing: 0,03em;
     color: #F5F4FA;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    
     &:not(:last-child){
         margin-right: 10px;
     }
+    @media screen and(min-width:480px){
+        margin-bottom: 20px;
+    }
+   
 }
 
 .footer-links__icon-teamfooter-link {

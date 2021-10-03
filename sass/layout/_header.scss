@@ -139,8 +139,14 @@
    margin-right: 10px;
 }
 .link, .mail-icon, .phone-icon{
-   display: flex;
-   align-items: center;
+
+align-items: center;
+
+   @media screen and(min-width:769px) {
+      display: flex; 
+   }
+  
+   
 }
 .menu-open, .menu-close{
    width: 40px;
@@ -153,6 +159,12 @@
    background-color: transparent;
 
 
+
+}
+.modal__mobile-icon{
+   .menu-open:hover &{
+      background-color: #2196F3 ;
+   }
 
 }
 

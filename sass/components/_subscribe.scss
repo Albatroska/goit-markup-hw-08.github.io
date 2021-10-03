@@ -1,7 +1,10 @@
 .subscribe{
-    width: 570px;
-    
-    margin-left: 93px;
+
+    @media screen and (min-width:769px){
+        width: 570px;
+        margin-left: 93px;  
+    }
+   
     
     b{
         display: inline-block;
@@ -16,13 +19,24 @@
     
 }
 .subscribe-input{
-    display: flex;
-    justify-content: space-between;
+    
+    @media screen and (min-width:769px){
+        display: flex;
+        justify-content: space-between;
+    }
+   
     }
 
 .subscribe-btn{
-    display: flex;
-    align-items: center;
+    @media screen and (max-width:480px){
+        margin-top: 15px;
+    }
+
+    @media screen and (min-width:769px){
+        display: flex;
+        align-items: center;
+    }
+    
     flex-basis: 200px;
     height: 50px;
     padding: 10px 28px;
@@ -46,6 +60,9 @@
 
 
 .sub-field{
+    @media screen and (max-width:480px){
+        width: 100%;
+    }
     flex-basis: 100%;
     padding: 15px;
     margin-right: 12px;
