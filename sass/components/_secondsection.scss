@@ -1,3 +1,10 @@
+.title__second{
+    @media screen and (wax-width:1199px){
+        text-align: center;
+        justify-content: center;
+        
+    }
+}
 
 .title__second-title {
     color: var(--title-black-color);
@@ -8,11 +15,16 @@
     margin-bottom: 10px;
 }
 .title__section-description{
+    @media screen and (min-width:479px){
+        
+        padding-bottom: 30px;
+    }  
 font-weight: 400;
     font-size: 14px;
     line-height: 1.71;}
 
-.servies__icon-image{      
+.servies__icon-image{ 
+      
     width: 100%;
     height: 120px;
     margin-bottom: 30px;
@@ -30,10 +42,15 @@ font-weight: 400;
     
 }
 .servies__li{
+    @media screen and (max-width:479px){
+        width: 100%;
+       
+    }  
+    
     width: 270px;
-    &:not(:last-child){
-        margin-right: 30px;
+    //&:not(:last-child){
+       // margin-right: 30px;
         
-    } 
+  //  } 
 }
 

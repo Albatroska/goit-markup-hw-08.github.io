@@ -31,13 +31,18 @@
     text-align: center;
     justify-content: center;
     @media screen and (min-width:769px){
-        display: flex; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+
     }
     
    
 }
     
 .footer{ 
+    
     .footer__logo{
     color: var(--title-white-color);
     font-family: Raleway;
