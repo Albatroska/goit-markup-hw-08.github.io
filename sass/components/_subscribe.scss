@@ -36,7 +36,10 @@
     }
     @media screen and (min-width:1200px){
         display: flex;
-        
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+      
       
     }
    
@@ -53,7 +56,7 @@
     }
     @media screen and (min-width:1200px){
         display: flex;
-        flex-basis: 200px;
+      //  flex-basis: 200px;
     }
     height: 50px;
     padding: 10px 28px;

@@ -21,13 +21,24 @@
         }
     }
     .client__section{
+        @media screen and (max-width:1199px) {
+            flex-wrap: wrap;
+
+           
+             } 
         align-items: center;
         justify-content: center;
         
             display: flex;
-            flex-wrap: wrap;
+            
         margin-right: -30px;
         margin-bottom: -30px;
+
+ @media screen and (min-width:1200) {
+            flex-wrap: nowrap;
+           
+             }
+   
       
     }
     .client__list{

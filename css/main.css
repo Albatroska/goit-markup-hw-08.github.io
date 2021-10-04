@@ -713,15 +713,10 @@ body img {
 }
 
 .title__section-description {
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
-
-@media screen and (min-width: 479px) {
-  .title__section-description {
-    padding-bottom: 30px;
-  }
 }
 
 .servies__icon-image {
@@ -797,7 +792,8 @@ body img {
 }
 
 .list {
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -835,6 +831,8 @@ body img {
 @media screen and (max-width: 1199px) {
   .itemsimg {
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -870,6 +868,26 @@ body img {
 .teamsection .image {
   background-color: #FFFFFF;
   width: 270px;
+}
+
+@media screen and (max-width: 767px) {
+  .teamtitle {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teamtitle {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teamtitle {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .img,
@@ -976,9 +994,20 @@ body img {
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .clients .client__section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .clients .client__section {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients .client__list {
@@ -1183,6 +1212,9 @@ body img {
 @media screen and (min-width: 1200px) {
   .subscribe-input {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -1215,7 +1247,6 @@ body img {
 @media screen and (min-width: 1200px) {
   .subscribe-btn {
     display: flex;
-    flex-basis: 200px;
   }
 }
 
@@ -1254,8 +1285,15 @@ body img {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btnlist {
@@ -1309,23 +1347,23 @@ body img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-}
-
-.portfolioli {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .portfolioli {
+  .portfolio-list {
     flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolioli {
+  .portfolio-list {
     flex-basis: calc(100% / 3 - 30px);
   }
+}
+
+.portfolioli {
+  width: 100%;
 }
 
 .portfolioli {

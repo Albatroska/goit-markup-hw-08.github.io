@@ -43,7 +43,10 @@
 
  
 .list{
-    margin-bottom: 30px;
+  
+    align-items: center;
+    justify-content: center;
+   
     
 @media screen and (min-width:768px){
     display: flex;
@@ -56,7 +59,10 @@
 .servies_li{
 
 
+
    @media screen and (max-width: 767px) {
+       
+      
         width: 100%;
         margin-bottom: 30px; 
     }
@@ -75,8 +81,11 @@
  //margin-right: 30px;
 //}
 .itemsimg { 
+   
     @media screen and (max-width:1199px){
-        margin-bottom:30px;   
+        margin-bottom:30px;  
+        margin-right: auto;
+        margin-left: auto;
     }
     
     position:relative;
