@@ -69,14 +69,14 @@
 
 
 .contact-nav {
-   
       
   @media screen and (max-width:1199px){
      
    display: flex;
-   flex-wrap: wrap;
+   
    justify-content: space-around;
-   margin-left: -30px;
+   
+   flex-direction: column;
   
 }
 
@@ -112,6 +112,12 @@
     display: flex;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+   @media screen and (min-width:768px){
+      justify-content: flex-end;
+      
+    }
+
 .site-nav :not(:last-child){
     margin-right: 45px;
    }
@@ -126,11 +132,10 @@
       
   @media screen and (max-width:1199px){
       display: none;
-    ;
-      
-  
      
   }
+ 
+
 }
 
 
