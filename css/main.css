@@ -912,6 +912,12 @@ body img {
   font-weight: 700;
 }
 
+.imgtitle,
+.title-second {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .teamsection {
   padding-top: 60px;
   padding-bottom: 60px;
