@@ -294,6 +294,10 @@ body img {
   background-color: transparent;
 }
 
+.menu-open:hover, .menu-open:focus, .menu-close:hover, .menu-close:focus {
+  fill: #2196F3;
+}
+
 .menu-open:hover .modal__mobile-icon {
   background-color: #2196F3;
 }
@@ -351,12 +355,22 @@ body img {
   text-decoration: none;
 }
 
+.mob-menu-item .mob-menu-link:hover, .mob-menu-item .mob-menu-link:focus {
+  color: #2196F3;
+}
+
 .mob-contacts-list {
   margin-bottom: 64px;
 }
 
 .mob-contacts-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.currentpage {
+  text-decoration: none;
+  position: relative;
+  color: var(--link-blue-color);
 }
 
 .mob-contacts-link {
@@ -368,8 +382,13 @@ body img {
   text-decoration: none;
 }
 
+.mob-contacts-link:hover, .mob-contacts-link:focus {
+  color: #2196F3;
+}
+
 .mob-contacts-tel-link {
   font-size: 34px;
+  color: #2196F3;
   line-height: calc(40 / 34);
 }
 
