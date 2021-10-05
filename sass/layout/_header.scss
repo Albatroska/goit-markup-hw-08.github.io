@@ -69,17 +69,12 @@
 
 
 .contact-nav {
+
    @media screen and (min-width:678px){
-     
       display: flex;
       justify-content: flex-end; 
-      flex-direction: column;
-
-      
-     
    }
 
-      
   @media screen and (max-width:1199px){
      
    display: flex;
@@ -87,6 +82,14 @@
    justify-content: space-around;
    
    flex-direction: column;
+} 
+
+@media screen and (min-width:1200px){
+     
+   display: flex;
+   
+   justify-content: space-around;
+   
   
 } 
  

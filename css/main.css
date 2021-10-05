@@ -181,7 +181,6 @@ body img {
   .contact-nav {
     display: flex;
     justify-content: flex-end;
-    flex-direction: column;
   }
 }
 
@@ -190,6 +189,13 @@ body img {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
