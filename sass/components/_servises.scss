@@ -89,6 +89,12 @@
         margin-left: auto;
     }
     
+    @media screen and (min-width:1200px){
+        margin-bottom:30px;  
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    
     position:relative;
 }
 .itemsimg .overley-text{
