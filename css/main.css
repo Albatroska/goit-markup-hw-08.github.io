@@ -789,6 +789,21 @@ body img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .servies__li {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .servies__li {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-right: 30px;
+  }
+}
+
 .imgsection {
   padding-top: 95px;
   padding-bottom: 95px;
@@ -831,14 +846,14 @@ body img {
 }
 
 .list {
-  justify-content: center;
+  align-content: flex-start;
 }
 
 @media screen and (min-width: 768px) {
   .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: -30px;
   }
 }
 
